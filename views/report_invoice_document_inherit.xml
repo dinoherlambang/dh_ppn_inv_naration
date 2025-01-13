@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <!-- by adding text before narration field -->
+        <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+            <xpath expr="//p[@t-if='o.narration']" position="before">
+                <p style="margin: 0; padding: 0; line-height: 1;">
+                    PPN 11% dihitung berdasarkan ketentuan PMK Nomor 131 Tahun 2024.
+                </p>
+            </xpath>
+        </template>
+        <!-- <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+            <xpath expr="//p[@t-if='o.narration']" position="inside">
+                <p style="margin: 0; padding: 0; line-height: 1;">
+                    <span t-field="o.narration"/>
+                </p>
+            </xpath>
+        </template> -->
+
+    </data>
+</odoo>
+
+
+
