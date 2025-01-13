@@ -2,11 +2,11 @@
     <data>
         <!-- by adding text before narration field -->
         <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
-            <xpath expr="//p[t-if='o.type in ('out_invoice', 'in_refund')']" position="replace">
-                    <!-- New content or leave empty to disable -->
-                    <!-- <p t-if="o.type in ('out_invoice', 'in_refund')">
-                        New content here or leave empty to disable
-                    </p> -->
+            <xpath expr="//p[@t-if=&quot;o.type in ('out_invoice', 'in_refund')&quot;]" position="replace">
+                <!-- New content or leave empty to disable -->
+                <!-- <p t-if="o.type in ('out_invoice', 'in_refund')">
+                    New content here or leave empty to disable
+                </p> -->
             </xpath>
             <xpath expr="//p[@t-if='o.narration']" position="before">
                 <p style="margin: 0; padding: 0; line-height: 1;">
@@ -24,6 +24,3 @@
 
     </data>
 </odoo>
-
-
-
