@@ -7,7 +7,7 @@
                     <!-- <p t-if="o.type in ('out_invoice', 'in_refund')">
                         New content here or leave empty to disable
                     </p> -->
-                </xpath>
+            </xpath>
             <xpath expr="//p[@t-if='o.narration']" position="before">
                 <p style="margin: 0; padding: 0; line-height: 1;">
                     PPN 11% dihitung berdasarkan ketentuan PMK Nomor 131 Tahun 2024.
